@@ -1,0 +1,139 @@
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Main CSS */
+.grid-wrapper>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-wrapper>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.masonry-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+.grid-wrapper .wide {
+    grid-column: span 4;
+    grid-row: span 2;
+
+}
+
+.grid-wrapper .wide1 {
+    grid-column: span 2;
+}
+
+.grid-wrapper .tall {
+    grid-row: span 2;
+}
+
+.grid-wrapper .big {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.grid-wrapper .small {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.grid-wrapper .small-1 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.masonry-text {
+    color: #FFF;
+    padding: 15px 0px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    font-size: 21px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .grid-wrapper .wide {
+        grid-column: span 3;
+        grid-row: span 2;
+
+    }
+
+    .grid-wrapper .wide1 {
+        grid-column: span 2;
+    }
+
+    .grid-wrapper .tall {
+        grid-row: span 2;
+    }
+
+    .grid-wrapper .big {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .grid-wrapper .small {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .grid-wrapper .small-1 {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .grid-wrapper .wide {
+        grid-column: span 2;
+        grid-row: span 2;
+
+    }
+
+    .grid-wrapper .wide1 {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .grid-wrapper .tall {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .grid-wrapper .big {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .grid-wrapper .small {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .grid-wrapper .small-1 {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}

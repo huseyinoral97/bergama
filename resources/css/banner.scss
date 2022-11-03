@@ -1,0 +1,39 @@
+.homepage-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    .homepage-banner_background {
+        position: absolute;
+        background: rgb(0 0 0 / 38%);
+        left: 0%;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    h1 {
+        position: absolute;
+        color: white;
+        font-size: 73.93pt;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .homepage-banner {
+        height: 50vh !important;
+
+        h1 {
+            position: absolute;
+            color: white;
+            font-size: 27.93pt;
+        }
+    }
+}

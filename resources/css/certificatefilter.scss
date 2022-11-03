@@ -1,0 +1,35 @@
+.sertificate-list_name {
+    list-style: none;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        margin-right: 15px;
+        font-weight: bold;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .active {
+        color: red;
+    }
+}
+
+.filtered-image_container {
+    .filtered-image {
+        width: 250px !important;
+        height: auto !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .filtered-image_container {
+        .filtered-image {
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+}

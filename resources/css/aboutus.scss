@@ -1,0 +1,175 @@
+@use 'base';
+
+.aboutus {
+    .aboutus-banner {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .react-player__shadow {
+            background-color: #062f87 !important;
+        }
+
+        img {
+            &:nth-child(2) {
+                position: absolute;
+            }
+        }
+    }
+
+    .homepage-about_images {
+        width: 100%;
+        position: relative;
+
+        img {
+
+            &:nth-child(1) {
+                width: 350px;
+            }
+
+            &:nth-child(2) {
+                width: 350px;
+                position: absolute;
+                left: 22%;
+                top: 31%;
+            }
+        }
+    }
+
+    .aboutus-blue-line {
+        height: 363px;
+        width: 100%;
+        background-color: #00a0df;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 320px;
+
+        .aboutus-blue-line_content {
+            background-image: url('/assets/images/aboutus/content-background.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 1130px;
+            height: 440px;
+            top: -50%;
+
+            .blue-line_text {
+                padding: 0px 73px;
+
+                h3 {
+                    color: #FFF;
+                }
+            }
+
+            .userpic-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .userpic-inner {
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    h4 {
+                        color: #FFF;
+                    }
+
+                    span {
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .aboutus {
+        .aboutus-banner {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .react-player__shadow {
+                background-color: #062f87 !important;
+            }
+
+            img {
+                &:nth-child(2) {
+                    position: absolute;
+                }
+            }
+        }
+
+        .homepage-about_images {
+            width: 100%;
+            position: relative;
+
+            img {
+
+                &:nth-child(1) {
+                    position: relative !important;
+                    width: 100% !important;
+                    height: auto !important;
+                }
+
+                &:nth-child(2) {
+                    position: relative !important;
+                    width: 100% !important;
+                    height: auto !important;
+                    left: 0% !important;
+                    top: 0% !important;
+                    margin-top: 25px !important;
+                }
+            }
+        }
+
+        .aboutus-blue-line {
+            margin-top: 208px;
+
+            .aboutus-blue-line_content {
+                width: 100%;
+
+                .blue-line_text {
+                    padding: 0px 73px;
+
+                    h3 {
+                        font-size: 16px;
+                    }
+                }
+
+                .userpic-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .userpic-inner {
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+
+                        h4 {
+                            color: #FFF;
+                        }
+
+                        span {
+                            color: #FFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

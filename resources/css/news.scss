@@ -1,0 +1,13 @@
+.news {
+    .news-banner {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            position: absolute;
+            color: #FFF;
+        }
+    }
+}

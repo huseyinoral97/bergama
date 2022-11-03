@@ -1,0 +1,41 @@
+@use 'base';
+
+.homepage-quality {
+    padding: base.$section-padding;
+
+    .border-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .border {
+            height: 2px;
+            width: 70%;
+        }
+    }
+
+
+    .carouselui {
+        padding: 50px 0px;
+
+        .carouselui-item {
+            background-color: #d9dadd;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            width: 220px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .slick-slide div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .homepage-quality {
+        padding: 30px 0px;
+    }
+}
