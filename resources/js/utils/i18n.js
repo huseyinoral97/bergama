@@ -66,7 +66,8 @@ const resources = {
             "ammo": "Ammonia and urea plants",
             "olefin": "Olefin plants",
             "aromatic": "Aromatic plants",
-            "incele": "View"
+            "incele": "View",
+            "sektorler": "Sectors"
         }
     },
     tr: {
@@ -130,7 +131,8 @@ const resources = {
             "ammo": "Amonyak ve üre bitkileri",
             "olefin": "Olefin bitkileri",
             "aromatic": "Aromatik bitkiler",
-            "incele": "İncele"
+            "incele": "İncele",
+            "sektorler": "Sektörler"
         }
     }
 };

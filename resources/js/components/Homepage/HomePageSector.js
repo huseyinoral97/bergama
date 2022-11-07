@@ -106,6 +106,9 @@ export const HomePageSector = () => {
     return (
         <div className='container-fluid homepage-sector'>
             <div className='row'>
+                <div className='col-12'>
+                    <h3 className='text-center mb-5 text-white'>{t('sektorler')}</h3>
+                </div>
                 <HomePageSectorItem data={data} />
             </div>
         </div >

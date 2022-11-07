@@ -21,7 +21,6 @@ Route::middleware('lang')->get('/posts/{slug}', [\App\Http\Controllers\Api\Conte
 Route::middleware('lang')->get('/projects', [\App\Http\Controllers\Api\ProjectController::class, 'all']);
 Route::middleware('lang')->get('/products', [\App\Http\Controllers\Api\ContentController::class, 'products']);
 Route::middleware('lang')->get('/products/{slug}', [\App\Http\Controllers\Api\ContentController::class, 'product']);
-Route::post('/hr/send', [\App\Http\Controllers\Api\CvController::class, 'store']);
 Route::get('/media', [\App\Http\Controllers\Api\MediaController::class, 'all']);
 Route::get('/certificates', [\App\Http\Controllers\Api\ContentController::class, 'certificates']);
 

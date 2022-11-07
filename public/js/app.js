@@ -9254,6 +9254,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var HomePageSector = function HomePageSector() {
   var _useTranslation = (0,react_i18next__WEBPACK_IMPORTED_MODULE_8__.useTranslation)(),
     t = _useTranslation.t;
@@ -9330,11 +9331,17 @@ var HomePageSector = function HomePageSector() {
   }];
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
     className: "container-fluid homepage-sector",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("div", {
       className: "row",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_HomePageSectorItem__WEBPACK_IMPORTED_MODULE_1__.HomePageSectorItem, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("div", {
+        className: "col-12",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h3", {
+          className: "text-center mb-5 text-white",
+          children: t('sektorler')
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_HomePageSectorItem__WEBPACK_IMPORTED_MODULE_1__.HomePageSectorItem, {
         data: data
-      })
+      })]
     })
   });
 };
@@ -11122,7 +11129,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 
 var AxiosClient = axios__WEBPACK_IMPORTED_MODULE_0___default().create({
-  baseURL: "https://bergamaindustry.com/",
+  baseURL: "http://localhost:8000/",
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json"
@@ -11213,7 +11220,8 @@ var resources = {
       "ammo": "Ammonia and urea plants",
       "olefin": "Olefin plants",
       "aromatic": "Aromatic plants",
-      "incele": "View"
+      "incele": "View",
+      "sektorler": "Sectors"
     }
   },
   tr: {
@@ -11277,7 +11285,8 @@ var resources = {
       "ammo": "Amonyak ve üre bitkileri",
       "olefin": "Olefin bitkileri",
       "aromatic": "Aromatik bitkiler",
-      "incele": "İncele"
+      "incele": "İncele",
+      "sektorler": "Sektörler"
     }
   }
 };
@@ -16738,7 +16747,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".homepage-banner {\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n}\n.homepage-banner .homepage-banner_background {\n  position: absolute;\n  background: rgba(0, 0, 0, 0.38);\n  left: 0%;\n  top: 0%;\n  width: 100%;\n  height: 100%;\n}\n.homepage-banner img {\n  width: 100%;\n  height: 100%;\n}\n.homepage-banner h1 {\n  position: absolute;\n  color: white;\n  font-size: 73.93pt;\n}\n\n@media only screen and (max-width: 480px) {\n  .homepage-banner {\n    height: 50vh !important;\n  }\n  .homepage-banner h1 {\n    position: absolute;\n    color: white;\n    font-size: 27.93pt;\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".homepage-banner {\n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n  overflow: hidden;\n}\n.homepage-banner .homepage-banner_background {\n  position: absolute;\n  background: rgba(0, 0, 0, 0.38);\n  left: 0%;\n  top: 0%;\n  width: 100%;\n  height: 100%;\n}\n.homepage-banner img {\n  width: 100%;\n  height: 100%;\n  transition: all 0.5s linear;\n  transform: scale3d(1, 1, 1);\n}\n.homepage-banner img:hover {\n  transform: scale3d(1.2, 1.2, 1);\n}\n.homepage-banner h1 {\n  position: absolute;\n  color: white;\n  font-size: 73.93pt;\n}\n\n@media only screen and (max-width: 480px) {\n  .homepage-banner {\n    height: 50vh !important;\n  }\n  .homepage-banner h1 {\n    position: absolute;\n    color: white;\n    font-size: 27.93pt;\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
